@@ -112,6 +112,10 @@ a {
     padding-top: 15px;
 }
 
+.card:hover {
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
