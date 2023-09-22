@@ -322,10 +322,7 @@ input{
 
 .filtres{
     display: flex;
-    align-items: center;
-    width: 750px;
-    height: 50px;
-    justify-content: space-around;
+    gap: 15px;
     margin-bottom: 35px;
 }
 
@@ -338,6 +335,11 @@ input{
     align-items: center;
     gap: 10px;
     cursor: pointer;
+}
+
+.container-filtres {
+    display: flex;
+    gap: 15px;
 }
 
 .btnFiltres:hover {
@@ -405,6 +407,15 @@ input{
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .filtres {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activites-cards img {
+        height: 200px;
     }
 }
 
