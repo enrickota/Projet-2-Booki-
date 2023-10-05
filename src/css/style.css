@@ -48,7 +48,7 @@ a {
 }
 
 .card-title {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .euro {
@@ -188,26 +188,13 @@ nav {
     padding: 30px 50px 30px 0px;
 }
 
-#btn-hebergements{
-    color: #0065FC;
-}
-
-#btn-hebergements:hover {
-    text-shadow: 1px 1px 1px rgba(0, 101, 252, 0.2);
-}
-
-#btn-activites:hover {
-    text-shadow: 1px 1px 1px rgba(00, 00, 00, 0.2);
-}
-
 .navbar {
     width: 244px;
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
 }
 
-#btn-hebergements::before {
+#btn-hebergements:hover:before {
     content: '';
     position: absolute;
     width: 110px;
@@ -215,7 +202,21 @@ nav {
     background-color: #0065FC;
     top: 1px;
 }
-  
+
+#btn-activites:hover:before {
+    content: '';
+    position: absolute;
+    width: 62px;
+    height: 3px;
+    background-color: #0065FC;
+    top: 1px;
+}
+
+.navbar a:hover {
+    color: #0065FC;
+    text-shadow: 1px 1px 1px rgba(0, 101, 252, 0.2);
+}
+
 .bar {
     display: flex;
   }
@@ -281,6 +282,7 @@ footer p:hover {
 .activites-cards .card {
     padding: 0px;
     padding-bottom: 5px;
+    height: 100%;
 }
 
 .activites-title {
@@ -322,7 +324,6 @@ input[type=search]{
     border: 1px solid #F2F2F2;
     text-align: center;
     font-weight: 700;
-    font-size: 18;
     font-family: "raleway";
     padding: 0px 20px;
 }
@@ -338,34 +339,35 @@ input[type=submit]{
     cursor: pointer;
 }
 
-.filtres{
+.filters{
     display: flex;
     gap: 15px;
     margin-bottom: 35px;
 }
 
-.btnFiltres {
+.btnFilter {
     border-radius: 25px;
     border: 2px solid var(--grey-tint-2, #D9D9D9);
     display: flex;
     height: 50px;
     padding: 0px 19px;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     cursor: pointer;
 }
 
-.container-filtres {
+.container-filters {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
 }
 
-.btnFiltres:hover {
+.btnFilter:hover {
     background-color: #DEEBFF;
 }
 
-.filtres i {
+.filters i {
     color: #0065FC;
 }
 
@@ -387,7 +389,7 @@ input[type=submit]{
     align-items: center;
 }
 
-.text-filtre {
+.text-filter {
     font-weight: 700;
     font-size: 18px;
 }
@@ -428,13 +430,21 @@ input[type=submit]{
         font-size: 13px;
     }
 
-    .filtres {
+    .filters {
         display: flex;
         flex-direction: column;
     }
 
     .activites-cards img {
         height: 200px;
+    }
+
+    .card-txt h3 {
+        font-size: 13px;
+    }
+
+    .activites-cards .card {
+        display: grid;
     }
 }
 
@@ -479,12 +489,15 @@ input[type=submit]{
     }
 
     .populaires-cards {
-        flex-direction: column;
+        display: grid;
     }
 
     .populaires-cards .card {
-        width: 325px;
         margin-top: 20px;
+    }
+
+    .populaires-cards a {
+        width: 100%;
     }
 
     .populaires .section-title {
@@ -510,7 +523,7 @@ input[type=submit]{
         text-align: center;
         line-height: 25.83px;
         margin-bottom: 10px;
-        margin-top: 30px;
+        margin-top: 50px;
     }
 
     .search #search-p {
@@ -536,6 +549,7 @@ input[type=submit]{
         padding-top: 0px;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        height: 10px;
         width: inherit;
     }
 
@@ -544,25 +558,13 @@ input[type=submit]{
         text-align: center;
     }
 
-    #btn-hebergements {
-        padding-bottom: 15px;
-        border-bottom: 2px solid transparent;
-        border-color: #0065FC;
-    }
-
-    #btn-activites {
-        padding-bottom: 15px;
-        border-bottom: 2px solid transparent;
-        border-color: #F2F2F2;
-    }
-
-    .container-filtres {
+    .container-filters {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 0px 20px;
+        padding-inline: 20px;
     }
 
-    .text-filtre {
+    .text-filter {
         padding-inline: 20px;
         margin-bottom: 10px;
         margin-top: 15px;
@@ -585,8 +587,25 @@ input[type=submit]{
         display: inherit;
     }
 
-    #btn-hebergements::before {
+    #btn-hebergements:before {
         display: none;
+    }
+        
+    #btn-activites:before {
+        display: none;
+    }
+
+    .class-btnHebergements:hover,
+    .class-btnActivites:hover {
+        border-color: #0065FC;
+    }
+
+    .class-btnHebergements,
+    .class-btnActivites {
+        text-align: center;
+        border-bottom: 3px solid transparent;
+        padding: 10px;
+        width: 100%;
     }
 
     .info p {
@@ -595,5 +614,9 @@ input[type=submit]{
 
     .section-title {
         line-height: 1px;
+    }
+
+    .btnFilter {
+        padding: 0px;
     }
 }
