@@ -183,7 +183,7 @@ nav {
     justify-content: space-between;
 }
 
-#logo {
+.logo {
     height: 19px;
     padding: 30px 50px 30px 0px;
 }
@@ -194,7 +194,7 @@ nav {
     justify-content: space-between;
 }
 
-#btn-hebergements:hover:before {
+.btn-hebergements:hover:before {
     content: '';
     position: absolute;
     width: 110px;
@@ -203,7 +203,7 @@ nav {
     top: 1px;
 }
 
-#btn-activites:hover:before {
+.btn-activites:hover:before {
     content: '';
     position: absolute;
     width: 62px;
@@ -253,6 +253,9 @@ footer p:hover {
     color: #0065FC;
 }
 
+footer h2 {
+    font-size: 1.17em;
+}
 
 /*ACTIVITES**************/
 
@@ -295,7 +298,7 @@ footer p:hover {
     margin-bottom: 30px;
 }
 
-#logo-none {
+.logo-none {
     border-radius: 0px 15px 15px 0px;
     background-color: #0065FC;
     color: white;
@@ -311,7 +314,7 @@ form i {
     border-radius: 15px 0px 0px 15px;
 }
 
-#icon-search {
+.icon-search {
     color: black;
 }
 
@@ -541,7 +544,7 @@ input[type=submit]{
         align-self: center;
     }
 
-    #logo {
+    .logo {
         padding: 30px 0px;
     }
 
@@ -583,15 +586,15 @@ input[type=submit]{
         display: none;
     }
 
-    #logo-none {
+    .logo-none {
         display: inherit;
     }
 
-    #btn-hebergements:before {
+    .btn-hebergements:before {
         display: none;
     }
         
-    #btn-activites:before {
+    .btn-activites:before {
         display: none;
     }
 
