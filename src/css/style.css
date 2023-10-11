@@ -624,4 +624,8 @@ input[type=submit]{
     .btn-filter {
         padding: 0px;
     }
+
+    #search-p {
+        margin-left: 20px;
+    }
 }
