@@ -193,6 +193,7 @@ nav {
     width: 244px;
     display: flex;
     justify-content: space-between;
+    padding-top: 15px;
 }
 
 .btn-accommodation:hover:before {
@@ -529,6 +530,7 @@ input[type=submit]{
         line-height: 25.83px;
         margin-bottom: 10px;
         margin-top: 50px;
+        font-size: 27px;
     }
 
     .search .search-p {
@@ -615,6 +617,7 @@ input[type=submit]{
 
     .info p {
         margin: 8px 0px;
+        word-spacing: 0.2em;
     }
 
     .section-title {
